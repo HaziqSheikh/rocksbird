@@ -1,0 +1,48 @@
+textarea {
+  resize: none;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-color {
+  color: rgb(233, 233, 233);
+}
+.text-color-dark {
+  color: rgb(58, 58, 58);
+}
+
+.bg-image {
+  background-image: url(../images/backgrounds/pen\ and\ tablet.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.bg-image-2 {
+  background-image: url(../images/backgrounds/research.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.bg-image-3 {
+  background-image: url(../images/backgrounds/some-pc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.overlay {
+  background-color: rgb(5, 40, 91, 0.7);
+  height: 80vh;
+}
+.dialog {
+  color: rgb(233, 233, 233);
+  text-transform: uppercase;
+}
+.border-left {
+  border-left: 5px solid rgb(0, 95, 236);
+}
+.para {
+  color: rgb(233, 233, 233);
+}
+#about {
+  color: black;
+}

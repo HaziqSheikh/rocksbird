@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews and comments</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/mystyle.css" />
+    <link
+      rel="shortcut icon"
+      href="images/backgrounds/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark p-3">
+      <div class="navbar-brand">
+        <a href="home.html"
+          ><img
+            src="images/backgrounds/for-ewbsite-logo.png"
+            alt="logo"
+            class="img-fluid ms-2"
+        /></a>
+      </div>
+      <button
+        class="navbar-toggler"
+        data-bs-target="#mynavbar"
+        data-bs-toggle="collapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav ms-5">
+          <li class="nav-item">
+            <a href="home.html" class="nav-link px-4">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-4">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="reviews.html" class="nav-link px-4">Reviews</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row align-items-center d-md-block d-none">
+        <div class="col-auto me-3">
+          <button
+            data-bs-target="#modalmessage"
+            data-bs-toggle="modal"
+            class="btn btn-outline-light rounded-pill"
+          >
+            <img
+              src="images/backgrounds/mail-40px.png"
+              alt="message-icon"
+              class="me-1"
+            />
+            Quick message
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <div class="row">
+        <h2 class="ms-md-0 ms-3 border-left">Comments & reviews</h2>
+      </div>
+      <div class="row border border-1 rounded-3 mt-3 p-3">
+        <div class="col" id="commentSection">
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col-auto my-1">
+                  <img
+                    src="images/backgrounds/usericon.png"
+                    alt="profile pic"
+                  />
+                </div>
+                <div class="col-auto p-0">
+                  <h4 class="fs-5">
+                    Haziq Rasool <br />
+                    <span class="fs-6 fw-light text-muted"
+                      >haziqrasool0@gmail.com</span
+                    >
+                  </h4>
+                </div>
+              </div>
+              <div class="row">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Debitis sunt similique repellendus sit iusto fuga aut dolorem,
+                  amet unde autem consectetur omnis minima itaque doloribus?
+                  Corporis enim sed numquam minima?
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col-auto my-1">
+                  <img
+                    src="images/backgrounds/usericon.png"
+                    alt="profile pic"
+                  />
+                </div>
+                <div class="col-auto p-0">
+                  <h4 class="fs-5">
+                    Khizer Yousaf <br />
+                    <span class="fs-6 fw-light text-muted"
+                      >haziqrasool0@gmail.com</span
+                    >
+                  </h4>
+                </div>
+              </div>
+              <div class="row">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Debitis sunt similique repellendus sit iusto fuga aut dolorem,
+                  amet unde autem consectetur omnis minima itaque doloribus?
+                  Corporis enim sed numquam minima?
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row" id="loader">
+            <div class="col">
+              <div class="text-center">
+                <div class="spinner-border text-primary" role="status"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-end my-3">
+        <div class="col-auto">
+          <button class="btn btn-primary rounded-pill" id="loadComment">
+            Load more
+          </button>
+        </div>
+        <div class="col-auto me-3">
+          <button
+            class="btn btn-success rounded-pill"
+            data-bs-target="#commentModal"
+            data-bs-toggle="modal"
+            id="addcommentbtn"
+          >
+            Add your comment
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+    <div class="container-fluid mt-5 bg-dark p-5">
+      <div class="row">
+        <div class="col-md-3 my-4 d-md-inline d-none">
+          <img
+            src="images/backgrounds/bright-logo-detail-and-simple.png"
+            alt="Brand logo"
+          />
+        </div>
+        <div class="col-md-4 offset-md-1 col-6">
+          <div class="row mb-3">
+            <h3 class="text-color border-left ps-2">Services</h3>
+          </div>
+          <div class="row ms-1">
+            <ul>
+              <li class="text-color">Logo designing</li>
+              <li class="text-color my-1">Socialmedia post designing</li>
+              <li class="text-color">Office stationary ddesigning</li>
+              <li class="text-color my-1">Youtube vedio thumbnails</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="row mb-3">
+            <h3 class="text-color border-left ps-2">Contact info</h3>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <img src="images/backgrounds/call-icon.png" alt="" />
+            </div>
+            <div class="col-auto text-color p-0">+92 123-45678-09</div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img src="images/backgrounds/mail-icon.png" alt="" />
+            </div>
+            <div class="col-9 text-color ms-2 p-0">haziqrasool0@gmail.com</div>
+          </div>
+          <div class="row my-3">
+            <h3 class="text-color">Follow us on</h3>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <a
+                href="https://www.facebook.com/profile.php?id=100007521962107"
+                target="blank"
+                ><img
+                  src="images/backgrounds/facebook-icon.png"
+                  alt="facebook-icon"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Facebook"
+                />
+              </a>
+            </div>
+            <div class="col-auto">
+              <a
+                href="https://www.instagram.com/rocksbird_graphics"
+                target="blank"
+                ><img
+                  src="images/backgrounds/insta-icon.png"
+                  alt="instagram-icon"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Instagram"
+              /></a>
+            </div>
+            <div class="col-auto">
+              <a
+                href="https://www.fiverr.com/rocks_bird_?up_rollout=true"
+                target="blank"
+                ><img
+                  src="images/backgrounds/fiverr-icon.png"
+                  alt="fiverr-icon"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Fiverr"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="background-color: rgb(5, 5, 5)">
+      <div class="row justify-content-center text-color text-muted p-2">
+        Rock's Bird graphics. All rights reserved.@2021
+      </div>
+    </div>
+    <!--comment modal  -->
+    <div class="modal fade" id="commentModal" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <div class="modal-title">
+              <h3 class="text-color">Add a comment</h3>
+            </div>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row my-3">
+                <div class="col">
+                  <div class="row">
+                    <label for="name" class="form-label fs-6 text-color-dark"
+                      >Full name :</label
+                    >
+                  </div>
+                  <div class="row">
+                    <input
+                      type="text"
+                      class="form-control border border-2 rounded-3"
+                      id="name"
+                    />
+                    <div class="invalid-feedback">Name is required!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="row">
+                    <label
+                      for="email-adress"
+                      class="form-label fs-6 text-color-dark"
+                      >Email adress :</label
+                    >
+                  </div>
+                  <div class="row">
+                    <input
+                      type="text"
+                      class="form-control border border-2 rounded-3"
+                      id="email"
+                    />
+                    <div class="invalid-feedback">Email is required!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col">
+                  <div class="row">
+                    <label for="coment" class="form-label fs-6 text-color-dark"
+                      >Comment :</label
+                    >
+                  </div>
+                  <div class="row">
+                    <textarea
+                      name="comment"
+                      id="comment"
+                      style="height: 100px"
+                      class="form-control border border-2 rounded-3"
+                    >
+                    </textarea>
+                    <div class="invalid-feedback">
+                      Comment box cannot be left empty!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-auto">
+                  <button
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal"
+                    id="cancelComment"
+                  >
+                    Cancel
+                  </button>
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-primary" id="addComment">Enter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- edit comment modal  -->
+    <div class="modal fade" id="editModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <div class="modal-title">
+              <h2 class="text-color">Edit your comment</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <textarea
+              name="editedComment"
+              id="editedComment"
+              style="height: 100px"
+              class="form-control border border-2 rounded-3"
+            ></textarea>
+          </div>
+          <div class="modal-footer">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-danger" data-bs-dismiss="modal">
+                  Cancel
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="btn btn-primary"
+                  id="confirmbtn"
+                  data-bs-dismiss="modal"
+                >
+                  Confirm
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal message  -->
+    <div class="modal fade" id="modalmessage" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-3">
+          <div class="modal-header pb-4 border-bottom-1">
+            <h2 class="fw-bold">Send a quick message</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body p-5 pt-3">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control rounded-3"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Full name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control rounded-3"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  type="text"
+                  class="form-control rounded-3"
+                  id="floatingInput"
+                  style="height: 100px"
+                  placeholder="name@example.com"
+                ></textarea>
+                <label for="floatingInput">Your message</label>
+              </div>
+              <button
+                class="w-100 mb-2 btn btn-lg rounded-4 btn-new"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/myjava.js"></script>
+  </body>
+</html>
